@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     let loader = new Loader({
-      apiKey: 'AIzaSyB5aQxkMgu-c6wmPQ_s8RO_Ks_YEYjC3YA&libraries=places'
+      apiKey: 'YOUR_API&libraries=places'
     })
 
     loader.load().then(() => {
