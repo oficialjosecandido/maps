@@ -1,0 +1,34 @@
+<div>
+    <div class="full" id="map" style="max-width: 50%;">
+    </div>
+ 
+</div>
+
+<div>
+    <table>
+        <thead>
+            <th>Status</th>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Nº of Reviews</th>
+            <th>Website</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Plus Code</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let result of place">
+                <td>{{result.business_status}}</td>
+                <td>{{result.name}}</td>
+                <td>{{result.rating}}</td>
+                <td>{{result.user_ratings_total}}</td>
+                <td>{{result.website}}</td>
+                <td>{{result.international_phone_number}}</td>
+                <td>{{result.formatted_address}}</td>
+                <td>{{result.plus_code.global_code}}</td>
+    
+            </tr>
+        </tbody>
+    </table>
+    <button id="more">Load More Results</button>
+</div>
